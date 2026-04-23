@@ -1,0 +1,24 @@
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+dist/
+coverage/
+
+# Local env and editor
+.env
+.env.*
+.vscode/
+.idea/
+
+# Local databases and generated app data
+*.db
+backend/app/uploads/
+analysis_exports/

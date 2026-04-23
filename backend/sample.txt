@@ -1,0 +1,11 @@
+ThreatGPT is a web platform with a React frontend used by internal security analysts.
+The frontend communicates with a FastAPI backend over HTTPS through a public API gateway.
+The backend handles authentication, project management, document uploads, and reporting.
+Uploaded architecture documents are processed by an internal parsing service.
+The backend stores project data and parsed findings in a relational database on a private subnet.
+An object storage bucket keeps uploaded documents and generated reports.
+Administrators access an internal dashboard, while external users access the public web application.
+The system integrates with a webhook endpoint for CI/CD notifications.
+Security notes: authentication uses bearer tokens, admin functions are role-restricted, and document uploads should be validated.
+Potential exposure points include the login page, public API routes, file upload endpoints, and webhook receivers.
+"""
